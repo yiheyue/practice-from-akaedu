@@ -7,3 +7,5 @@
 2. 计算出 a 和 b 的最大公约数（Greatest Common Divisor）。
 
 3. 计算出 a 和 b 的最小公倍数（Least Common Multiple）。
+
+4. 插入排序、归并排序、快速排序
