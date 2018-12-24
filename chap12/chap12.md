@@ -14,8 +14,34 @@ Pascal 语言的设计者 Niklaus Wirth 提出：算法 + 数据结构 = 程序�
 
 ## 堆栈
 
+栈的访问方式为 Push 和 Pop：
+- Push（入栈或者是压栈）：向栈顶添加元素
+- Pop（出栈或者是弹出）：取出当前栈顶的元素
+
+只能访问栈顶的元素而不能访问栈中的其他元素。
+
+`putchar()` 函数的作用是把一个字符打印到屏幕上。
+
+栈的特点：LIFO（Last In First Out）
+
 ## 深度优先搜索
+
+深度优先搜索（DFS，Depth First Search）
+
+设计算法和数据结构这两件工作是紧密联系的。
 
 ## 队列与广度优先搜索
 
+队列的访问方式为 Enqueue 和 Dequeue：
+- Enqueue（入队）：将元素添加到队尾
+- Dequeue（出队）：从队头取出元素
+
+队列类似于生活中排队买票，先来先服务。
+
+队列的特点：FIFO（First In First Out）
+
+广度优先搜索（BFS，Breadth First Search）
+
 ## 环形队列
+
+环形队列（Circular Queue）可以将出队的元素的存储空间回收利用。
