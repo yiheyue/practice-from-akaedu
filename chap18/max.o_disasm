@@ -1,0 +1,24 @@
+
+max.o:     file format elf32-i386
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	bf 00 00 00 00       	mov    $0x0,%edi
+   5:	8b 04 bd 00 00 00 00 	mov    0x0(,%edi,4),%eax
+   c:	89 c3                	mov    %eax,%ebx
+
+0000000e <start_loop>:
+   e:	83 f8 00             	cmp    $0x0,%eax
+  11:	74 10                	je     23 <loop_exit>
+  13:	47                   	inc    %edi
+  14:	8b 04 bd 00 00 00 00 	mov    0x0(,%edi,4),%eax
+  1b:	39 d8                	cmp    %ebx,%eax
+  1d:	7e ef                	jle    e <start_loop>
+  1f:	89 c3                	mov    %eax,%ebx
+  21:	eb eb                	jmp    e <start_loop>
+
+00000023 <loop_exit>:
+  23:	b8 01 00 00 00       	mov    $0x1,%eax
+  28:	cd 80                	int    $0x80
