@@ -10,8 +10,6 @@ int main(void)
 	static int a = 40;
 	char b[] = "Hello world";
 	register int c = 50;
-
 	printf("Hello world %d\n", c);
-
 	return 0;
 }

@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int bar(int c, int d)
 {
 	int e = c + d;
